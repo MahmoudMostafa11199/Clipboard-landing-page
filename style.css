@@ -1,0 +1,411 @@
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Bai Jamjuree", sans-serif;
+  font-weight: 400;
+  font-size: 2.4rem;
+  color: #9fabb2;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/*----------------------*/
+.container {
+  max-width: 144rem;
+  margin: 0 auto;
+  line-height: 1.4;
+  padding: 0 2.2rem;
+}
+
+.grid {
+  display: grid;
+  gap: 4.6rem;
+}
+
+.grid-2-columns {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.grid-3-columns {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+h4 {
+  font-size: 2.4rem;
+  color: #4c545d;
+  margin-bottom: 1.4rem;
+}
+
+h4 + p {
+  font-size: 2rem;
+}
+
+/*----------------------*/
+
+/*-------- Hero Section --------*/
+.Hero-section {
+  /* padding: 9.6rem 0; */
+  height: 100vh;
+  text-align: center;
+  background-image: url("./images/bg-header-desktop.png");
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: cover;
+  position: relative;
+}
+
+.hero-description {
+  max-width: 80rem;
+  padding: 13.5rem 2rem;
+  margin: 0 auto;
+}
+
+.Clipboard-logo {
+  width: 11rem;
+  margin-bottom: 4.8rem;
+}
+
+.primary-heading {
+  margin-bottom: 2rem;
+  font-size: 4.8rem;
+  color: #4c545d;
+}
+
+.hero-text {
+  margin-bottom: 6.2rem;
+  font-size: 2.2rem;
+}
+
+.download-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2.4rem;
+}
+
+.btn:link,
+.btn:visited {
+  padding: 1.6rem 2.8rem;
+  background-color: #777;
+  border-radius: 5rem;
+  color: #fff;
+  text-decoration: none;
+  font-size: 2rem;
+  box-shadow: 0 -2px #aaa inset;
+}
+
+.btn:link:nth-child(1),
+.btn:visited:nth-child(1) {
+  background-color: #26baa4;
+}
+
+.btn:hover:nth-child(1),
+.btn:active:nth-child(1) {
+  background-color: #51c8b6;
+}
+
+.btn:link:nth-child(2),
+.btn:visited:nth-child(2) {
+  background-color: #6173ff;
+}
+
+.btn:hover:nth-child(2),
+.btn:active:nth-child(2) {
+  background-color: #818fff;
+}
+
+/*-------- Feature Section --------*/
+.Feature-section {
+  padding: 6.4rem 0;
+}
+
+.secondary-heading {
+  text-align: center;
+  color: #4c545d;
+  margin-bottom: 2.4rem;
+}
+
+.feature-description {
+  max-width: 95rem;
+  margin: 0 auto 9.6rem;
+  text-align: center;
+  line-height: 1.4;
+  font-size: 2rem;
+}
+
+.feature-box {
+  align-items: center;
+}
+
+.feature-img-box img {
+  max-width: 100%;
+  margin-left: -10%;
+}
+
+.feature-description-box {
+  display: flex;
+  flex-direction: column;
+  gap: 6.4rem;
+}
+
+.feature {
+  width: 45rem;
+}
+
+/*-------- ClipboardAccess-section --------*/
+.ClipboardAccess-section {
+  padding: 6.4rem 0;
+}
+
+.ClipboardAccess-img-box {
+  text-align: center;
+}
+
+.C_M-screen {
+  width: 70%;
+}
+
+/*-------- Workflow-section --------*/
+.Workflow-section {
+  padding: 9.6rem 0;
+  text-align: center;
+}
+
+.Workflow-section .feature-description {
+  margin-bottom: 9.6rem;
+}
+
+.tools-box {
+  max-width: 130rem;
+  margin: 0 auto 9.6rem;
+}
+
+.tool-icon {
+  height: 4rem;
+  margin-bottom: 2.4rem;
+}
+
+.tool-icon + h4 {
+  margin-bottom: 2rem;
+}
+
+.company-logos {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+/*-------- Download-section --------*/
+.Download-section {
+  padding: 9.6rem 0;
+  text-align: center;
+}
+
+/*-------- Footer --------*/
+.footer {
+  padding: 3.6rem 0;
+  text-align: center;
+  background-color: #f5f7f7;
+}
+
+.footer-grid {
+  max-width: 130rem;
+  margin: 0 auto;
+  padding: 0 2.8rem 3.6rem;
+  grid-template-columns: 1fr 1fr 1fr 1fr 2fr;
+}
+
+.logo-column img {
+  height: 6.4rem;
+}
+
+.footer-nav {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+  text-align: left;
+}
+
+.footer-link:link,
+.footer-link:visited {
+  text-decoration: none;
+  color: #4c545d;
+  font-size: 1.8rem;
+}
+
+.footer-link:hover,
+.footer-link:active {
+  color: #26baa4;
+}
+
+.social-link {
+  display: flex;
+  list-style: none;
+  gap: 2.4rem;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.social-icon {
+  width: 3.2rem;
+  height: 3.2rem;
+  color: #4c545d;
+}
+
+.social-icon:hover {
+  color: #26baa4;
+}
+
+.attribution {
+  font-size: 1.8rem;
+  padding: 0 3.6rem;
+}
+
+/*******************************/
+/*** Below 1030px **************/
+/*******************************/
+@media (max-width: 64em) {
+  html {
+    font-size: 50%;
+  }
+
+  .hero-description {
+    padding-top: 26.5rem;
+  }
+
+  .company-logos img {
+    width: 15rem;
+  }
+
+  .tools-box {
+    padding: 0 1.5rem;
+  }
+}
+
+/*******************************/
+/*** Below 860px **************/
+/*******************************/
+@media (max-width: 54em) {
+  .hero-description {
+    max-width: 75rem;
+    padding-top: 20rem;
+  }
+
+  .feature-description {
+    max-width: 70rem;
+  }
+
+  .company-logos img {
+    max-width: 13rem;
+  }
+}
+
+/*******************************/
+/*** Below 650px **************/
+/*******************************/
+@media (max-width: 41em) {
+  .primary-heading {
+    font-size: 4rem;
+  }
+
+  .hero-text {
+    font-size: 2rem;
+  }
+
+  .feature-box {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .feature-img-box img {
+    max-width: 60%;
+    margin: 0 0 5rem;
+  }
+
+  .feature-description-box {
+    align-items: center;
+  }
+
+  .grid-3-columns {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .company-logos img {
+    max-width: 10rem;
+  }
+
+  .grid-5-columns {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .footer-nav:nth-child(3),
+  .footer-nav:nth-child(4) {
+    margin-top: -1rem;
+  }
+}
+
+/*******************************/
+/*** Below 430px **************/
+/*******************************/
+@media (max-width: 27em) {
+  .hero-description {
+    max-width: 45rem;
+    padding-top: 15rem;
+  }
+
+  .container {
+    padding: 0 5rem;
+  }
+
+  .download-box {
+    flex-direction: column;
+  }
+
+  .btn:link {
+    width: 40rem;
+  }
+
+  .Feature-section {
+    padding-bottom: 12.8rem;
+  }
+
+  .feature-box {
+    padding: 0 5rem;
+  }
+
+  .grid-3-columns {
+    grid-template-columns: 1fr;
+    row-gap: 6.2rem;
+  }
+
+  .tools-box {
+    margin-bottom: 12.4rem;
+  }
+
+  .company-logos {
+    flex-direction: column;
+    row-gap: 6.2rem;
+  }
+
+  .company-logos img {
+    max-width: 15rem;
+  }
+
+  .grid-5-columns {
+    grid-template-columns: 1fr;
+    justify-items: center;
+    row-gap: 2rem;
+    margin-bottom: 2.6rem;
+  }
+
+  .footer-nav {
+    text-align: center;
+  }
+}
